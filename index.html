@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Actividad de Objetos 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Importar Model Viewer -->
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js">
+    </script>
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <div class="logo">
+            <div class="cubo">◆</div>
+            <h1>Actividad de Objetos 3D</h1>
+        </div>
+
+        <!-- MENÚ -->
+        <nav class="menu">
+
+            <a href="index.html" class="activo">
+                Inicio
+            </a>
+
+            <a href="daniel.html">
+                Daniel
+            </a>
+
+            <a href="marcos.html">
+                Marcos
+            </a>
+
+            <a href="integrantes.html">
+                Integrantes
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+    <main>
+
+        <section class="hero">
+
+            <!-- TEXTO -->
+            <div class="hero-text">
+
+                <h2>Objetos 3D</h2>
+
+                <p>
+                    Bienvenidos a nuestra actividad de diseño y
+                    representación de objetos en tres dimensiones.
+                </p>
+
+                <p>
+                    En este sitio se presentan los objetos 3D
+                    realizados por los integrantes del grupo.
+                </p>
+
+            </div>
+
+
+            <!-- MODELO 3D -->
+            <div class="modelo-inicio">
+
+                <model-viewer
+                    src="objetos/scene.gltf"
+                    alt="Modelo 3D de la actividad"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    environment-image="neutral"
+                    loading="eager">
+
+                </model-viewer>
+
+                <p class="ayuda-3d">
+                    Arrastra para rotar • Usa la rueda para hacer zoom
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMACIÓN -->
+        <section class="actividad">
+
+            <div class="icono">
+                ◇
+            </div>
+
+            <div>
+
+                <h2>Actividad</h2>
+
+                <p>
+                    Explorar y representar diferentes objetos mediante
+                    modelos tridimensionales, aplicando conceptos de
+                    diseño, modelado y visualización.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            Diseño de Experiencia de Usuario - TI - PAO 4
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+

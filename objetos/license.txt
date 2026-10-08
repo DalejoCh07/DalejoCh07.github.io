@@ -1,0 +1,11 @@
+Model Information:
+* title:	28 Free objects
+* source:	https://sketchfab.com/3d-models/28-free-objects-e36be0a9c20443c4911ed0a26b000b49
+* author:	Askasknot (https://sketchfab.com/Askasknot)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "28 Free objects" (https://sketchfab.com/3d-models/28-free-objects-e36be0a9c20443c4911ed0a26b000b49) by Askasknot (https://sketchfab.com/Askasknot) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

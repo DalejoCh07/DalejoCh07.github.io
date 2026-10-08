@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marcos - Objetos 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Importar Model Viewer -->
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js">
+    </script>
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <div class="logo">
+            <div class="cubo">◆</div>
+            <h1>Actividad de Objetos 3D</h1>
+        </div>
+
+        <!-- MENÚ -->
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="daniel.html">Daniel</a>
+            <a href="marcos.html" class="activo">Marcos</a>
+            <a href="acercaDe.html">Integrantes</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main class="contenido">
+
+        
+
+        <p class="subtitulo">
+            Modelos tridimensionales aplicados por Marcos.
+        </p>
+
+
+        <!-- GALERÍA DE MODELOS -->
+        <section class="galeria">
+
+
+            <!-- MODELO 3D 1 -->
+            <div class="objeto-card">
+
+                <div class="numero">01</div>
+
+                <h3>Modelo 1</h3>
+
+                <div class="modelo-container">
+
+                    <model-viewer
+                        src="camaro/scene.gltf"
+                        alt="Primer objeto 3D de Marcos"
+                        camera-controls
+                        auto-rotate
+                        shadow-intensity="1"
+                        exposure="1"
+                        environment-image="neutral">
+                    </model-viewer>
+
+                </div>
+
+                <p>
+                    Modelo de Chevrolet Camaro.
+                </p>
+
+            </div>
+
+
+            <!-- MODELO 3D 2 -->
+            <div class="objeto-card">
+
+                <div class="numero">02</div>
+
+                <h3>Modelo 2</h3>
+
+                <div class="modelo-container">
+
+                    <model-viewer
+                        src="peak/scene.gltf"
+                        alt="Segundo objeto 3D de Marcos"
+                        camera-controls
+                        auto-rotate
+                        shadow-intensity="1"
+                        exposure="1"
+                        environment-image="neutral">
+                    </model-viewer>
+
+                </div>
+
+                <p>
+                    Modelos de personajes del videojuego "Peak".
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Diseño de Experiencia de Usuario - TI - PAO 4</p>
+    </footer>
+
+</body>
+
+</html>

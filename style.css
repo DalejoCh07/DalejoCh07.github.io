@@ -1,0 +1,700 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #17202a;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.header {
+    height: 90px;
+    background: #172235;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo h1 {
+    font-size: 25px;
+}
+
+.cubo {
+    font-size: 48px;
+    color: #3478f6;
+}
+
+
+/* =========================================
+   MENÚ
+========================================= */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+
+    padding: 14px 22px;
+
+    border-radius: 6px;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #3478f6;
+}
+
+.menu .activo {
+    background: #3478f6;
+}
+
+
+/* =========================================
+   PÁGINA PRINCIPAL
+========================================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 70px 7%;
+
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #eef3f9
+    );
+}
+
+
+/* TEXTO PRINCIPAL */
+
+.hero-text {
+    width: 48%;
+}
+
+.hero-text h2 {
+    font-size: 65px;
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    font-size: 21px;
+    line-height: 1.7;
+
+    color: #34495e;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================================
+   MODELO 3D DEL INICIO
+========================================= */
+
+.modelo-inicio {
+    width: 48%;
+    height: 400px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef1f5;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #e0e5eb;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* MODEL VIEWER */
+
+.modelo-inicio model-viewer {
+    width: 100%;
+    height: 100%;
+
+    background-color: #eef1f5;
+}
+
+
+/* TEXTO DE AYUDA */
+
+.ayuda-3d {
+    position: absolute;
+
+    bottom: 12px;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: #667085;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   AJUSTE DEL HERO
+========================================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 70px 7%;
+
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #eef3f9
+    );
+}
+
+
+/* TEXTO */
+
+.hero-text {
+    width: 48%;
+}
+
+.hero-text h2 {
+    font-size: 65px;
+
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    font-size: 21px;
+
+    line-height: 1.7;
+
+    color: #34495e;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 45px;
+    }
+
+    .modelo-inicio {
+        width: 100%;
+
+        height: 350px;
+    }
+}
+
+
+
+/* =========================================
+   TARJETA ACTIVIDAD
+========================================= */
+
+.actividad {
+    max-width: 1000px;
+
+    margin: 70px auto;
+
+    padding: 45px;
+
+    background: #eaf2ff;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+.icono {
+    font-size: 100px;
+
+    color: #3478f6;
+
+    min-width: 150px;
+
+    text-align: center;
+}
+
+
+.actividad h2 {
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+
+.actividad p {
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: #34495e;
+}
+
+
+/* =========================================
+   PÁGINAS DANIEL Y MARCOS
+========================================= */
+
+.contenido {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 30px;
+}
+
+
+.titulo-pagina {
+    text-align: center;
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.subtitulo {
+    text-align: center;
+
+    font-size: 19px;
+
+    color: #667085;
+
+    margin-bottom: 50px;
+}
+
+
+/* =========================================
+   GALERÍA
+========================================= */
+
+.galeria {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+}
+
+
+/* TARJETA DEL OBJETO */
+
+.objeto-card {
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.objeto-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.13);
+}
+
+
+/* NÚMERO */
+
+.numero {
+    color: #3478f6;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.objeto-card h3 {
+    font-size: 27px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   ESPACIO PARA LAS IMÁGENES
+========================================= */
+
+.imagen-container {
+    width: 100%;
+
+    height: 350px;
+
+    background: #eef1f5;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 2px dashed #c5ccd5;
+}
+
+
+/* IMAGEN 3D */
+
+.imagen-container img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* TEXTO DE TARJETA */
+
+.objeto-card p {
+    margin-top: 20px;
+
+    line-height: 1.6;
+
+    color: #667085;
+}
+
+
+/* =========================================
+   INFORMACIÓN
+========================================= */
+
+.informacion {
+    background: white;
+
+    padding: 50px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+.etiqueta {
+    color: #3478f6;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.informacion h2 {
+    font-size: 45px;
+
+    margin: 15px 0 25px;
+}
+
+
+.informacion p {
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    color: #4b5563;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   INTEGRANTES
+========================================= */
+
+.seccion-integrantes {
+    margin-top: 70px;
+
+    text-align: center;
+}
+
+
+.seccion-integrantes h2 {
+    font-size: 35px;
+
+    margin-bottom: 35px;
+}
+
+
+.integrantes-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+.integrante {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+}
+
+
+.avatar {
+    width: 80px;
+    height: 80px;
+
+    margin: auto;
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background: #3478f6;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.integrante h3 {
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.integrante p {
+    color: #667085;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #172235;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .header {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 25px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 45px;
+    }
+
+    .figuras {
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .integrantes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .actividad {
+        margin: 40px 20px;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   CONTENEDOR DE MODELOS 3D
+========================================= */
+
+.modelo-container {
+    position: relative;
+
+    width: 100%;
+    height: 350px;
+
+    background: #eef1f5;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border: 2px dashed #c5ccd5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MODEL VIEWER */
+
+.modelo-container model-viewer {
+    width: 100%;
+    height: 100%;
+
+    background-color: #eef1f5;
+}
+
+
+/* Texto de ayuda debajo del modelo */
+
+.modelo-container::after {
+    content: "Arrastra para rotar • Usa la rueda para hacer zoom";
+
+    position: absolute;
+
+    bottom: 10px;
+
+    left: 0;
+
+    right: 0;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #667085;
+
+    pointer-events: none;
+}
